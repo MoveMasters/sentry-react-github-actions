@@ -754,7 +754,7 @@ module.exports = function (webpackEnv) {
         project: "javascript-react",
 
         // Specify the directory containing build artifacts
-        include: "./build",
+        include: "./wrong_dir",
 
         // Auth tokens can be obtained from https://sentry.io/settings/account/api/auth-tokens/
         // and needs the `project:releases` and `org:read` scopes
