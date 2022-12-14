@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+const methodDoesNotExist = {};
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={() => methodDoesNotExist()}>Break the world</button>
       </header>
     </div>
   );
