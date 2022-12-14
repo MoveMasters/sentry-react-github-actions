@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-const lololol = {};
+const please_just_work = {};
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <button onClick={() => lololol()}>Break the world</button>
+        <button onClick={() => please_just_work()}>Break the world</button>
       </header>
     </div>
   );
