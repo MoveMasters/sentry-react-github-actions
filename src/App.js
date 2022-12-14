@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-const another = {};
+const lololol = {};
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <button onClick={() => another()}>Break the world</button>
+        <button onClick={() => lololol()}>Break the world</button>
       </header>
     </div>
   );
