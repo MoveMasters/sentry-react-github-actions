@@ -25,7 +25,6 @@ const ForkTsCheckerWebpackPlugin =
     ? require("react-dev-utils/ForkTsCheckerWarningWebpackPlugin")
     : require("react-dev-utils/ForkTsCheckerWebpackPlugin");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
-const SentryWebpackPlugin = require("@sentry/webpack-plugin");
 
 const createEnvironmentHash = require("./webpack/persistentCache/createEnvironmentHash");
 
@@ -749,20 +748,6 @@ module.exports = function (webpackEnv) {
             },
           },
         }),
-      new SentryWebpackPlugin({
-        org: "svelte-testing",
-        project: "javascript-react",
-
-        // Specify the directory containing build artifacts
-        include: "./wrong_dir",
-
-        // Auth tokens can be obtained from https://sentry.io/settings/account/api/auth-tokens/
-        // and needs the `project:releases` and `org:read` scopes
-        authToken: process.env.SENTRY_AUTH_TOKEN,
-
-        // Optionally uncomment the line below to override automatic release name detection
-        // release: process.env.RELEASE,
-      }),
     ].filter(Boolean),
     // Turn off performance processing because we utilize
     // our own hints via the FileSizeReporter
