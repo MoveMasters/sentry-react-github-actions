@@ -7,7 +7,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 Sentry.init({
-  dsn: "https://3e7e19dc55684ebe990beb2fca3a6084@o4504324479647744.ingest.sentry.io/4504328796897280",
+  dsn: "https://b1071de14d1846859587da699c73cf28@o4504324479647744.ingest.sentry.io/4504448593100800",
   integrations: [new BrowserTracing()],
 
   // Set tracesSampleRate to 1.0 to capture 100%
