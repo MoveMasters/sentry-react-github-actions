@@ -8,7 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+      SENTRY_AUTH_TOKEN: ${{ env.SENTRY_AUTH_TOKEN }}
       SENTRY_ORG: svelte-testing
       SENTRY_PROJECT: javascript-react-github-actions
 
@@ -27,3 +27,4 @@ jobs:
           environment: production
           url_prefix: ~/static/js
           sourcemaps: build/static/js
+          set_commits: skip
