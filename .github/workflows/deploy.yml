@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
-      SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
-      SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+      SENTRY_ORG: svelte-testing
+      SENTRY_PROJECT: javascript-react-github-actions
 
     steps:
       - uses: actions/checkout@v2.3.4
